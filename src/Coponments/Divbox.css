@@ -1,0 +1,48 @@
+.div-box{
+    margin: 10px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.divbox1 img{
+    height: 400px;
+    width: 280px;
+    transition: transform 0.3s linear;
+}
+.divbox1 img:hover{
+    transform: scale(1.1);
+}
+.divbox2 {
+    display: flex;
+    gap: 5px;
+    
+}
+.divbox2 .bi{
+    color: rgb(255, 152, 170);
+}
+.divbox3{
+    margin-left: 20px;
+}
+.divbox3 p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.vishnu button{
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: rgb(255, 128, 149);
+}
+.vishnu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,92 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 192, 203, 0.119); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 20px;
+  width: 300px;
+  margin-left: 40%;
+  border-radius: 8px;
+  background-color: rgb(255, 131, 152);
+
+}
+
+.modal-content h2 {
+  color: rgb(255, 130, 150);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.modal-content input {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  width: 300px; 
+}
+
+.modal-content button {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 300px; 
+  background-color: rgb(255, 128, 149);
+}
+
+.modal-content button:hover {
+  background-color: pink;
+}
+
+.close-btn {
+  background-color: pink;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+
+@media (max-width: 600px) {
+  .modal-content {
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 350px; 
+  }
+  .modal-content input {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    width: 100%; 
+  }
+  .modal-content button {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    width: 100%;
+    background-color: rgb(255, 128, 149);
+  }
+}

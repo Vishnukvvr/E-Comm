@@ -1,0 +1,147 @@
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(254, 118, 141);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px 0;
+  }
+  
+  .list-items ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .list-items ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .list-items ul li:hover {
+    background-color: pink;
+  }
+  
+  .list-items ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .bi-cart-fill {
+    color: white;
+  }
+  
+  .header-btns button {
+    padding: 10px 20px;
+    border: 0;
+    background-color: rgb(254, 118, 141);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .name p{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+  .header-btns button:hover {
+    background-color: pink;
+  }
+  
+  .bi-list {
+    color: white;
+    display: none; 
+  }
+  
+  
+  .list-items.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 20px;
+    background-color: rgb(254, 118, 141);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
+ 
+  @media (max-width: 768px) {
+    .list-items {
+      display: none; 
+    }
+  
+    .bi-list {
+      display: block;
+    }
+  
+    .list-items.active {
+      display: flex; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      right: 20px;
+      background-color: rgb(254, 118, 141);
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .list-items ul {
+      flex-direction: column; 
+      gap: 10px;
+    }
+  
+    .list-items ul li {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .header-btns {
+      gap: 10px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    header {
+      
+      padding: 15px 0;
+    }
+  
+
+  
+    .header-btns button {
+      font-size: 1rem; 
+      padding: 8px 16px;
+    }
+  
+    .list-items.active {
+      right: 10px;
+      width: 180px;
+    }
+  }
+  
